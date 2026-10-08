@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: sans-serif;
+  margin : 0;
+}
+
+#resize-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  background-color: #ffffff;
+  border: 2px solid #333;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#resize-btn:hover {
+  background-color: #333;
+  color: #ffffff;
+}
+
+#container {
+  width: 960px;
+  height: 960px;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid #333;
+}
+
+.grid-square {
+  border: 1px solid #e0e0e0;
+  flex-shrink: 0;
+}
